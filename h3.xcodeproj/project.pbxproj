@@ -7,6 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00D5080629D6E2040034D80D /* vec2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F029D6E2010034D80D /* vec2d.h */; };
+		00D5080729D6E2040034D80D /* h3api.h in Resources */ = {isa = PBXBuildFile; fileRef = 00D507F129D6E2010034D80D /* h3api.h */; };
+		00D5080829D6E2040034D80D /* iterators.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F229D6E2010034D80D /* iterators.h */; };
+		00D5080929D6E2040034D80D /* h3Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F329D6E2020034D80D /* h3Index.h */; };
+		00D5080A29D6E2040034D80D /* algos.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F429D6E2020034D80D /* algos.h */; };
+		00D5080B29D6E2040034D80D /* linkedGeo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F529D6E2020034D80D /* linkedGeo.h */; };
+		00D5080C29D6E2040034D80D /* vertexGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F629D6E2020034D80D /* vertexGraph.h */; };
+		00D5080D29D6E2040034D80D /* vec3d.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F729D6E2020034D80D /* vec3d.h */; };
+		00D5080E29D6E2040034D80D /* coordijk.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F829D6E2020034D80D /* coordijk.h */; };
+		00D5080F29D6E2040034D80D /* h3Assert.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507F929D6E2020034D80D /* h3Assert.h */; };
+		00D5081029D6E2040034D80D /* directedEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FA29D6E2030034D80D /* directedEdge.h */; };
+		00D5081129D6E2040034D80D /* alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FB29D6E2030034D80D /* alloc.h */; };
+		00D5081229D6E2040034D80D /* mathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FC29D6E2030034D80D /* mathExtensions.h */; };
+		00D5081329D6E2040034D80D /* vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FD29D6E2030034D80D /* vertex.h */; };
+		00D5081429D6E2040034D80D /* bbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FE29D6E2030034D80D /* bbox.h */; };
+		00D5081529D6E2040034D80D /* faceijk.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D507FF29D6E2030034D80D /* faceijk.h */; };
+		00D5081629D6E2040034D80D /* latLng.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080029D6E2030034D80D /* latLng.h */; };
+		00D5081729D6E2040034D80D /* baseCells.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080129D6E2040034D80D /* baseCells.h */; };
+		00D5081829D6E2040034D80D /* polygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080229D6E2040034D80D /* polygon.h */; };
+		00D5081929D6E2040034D80D /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080329D6E2040034D80D /* constants.h */; };
+		00D5081A29D6E2040034D80D /* localij.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080429D6E2040034D80D /* localij.h */; };
+		00D5081B29D6E2040034D80D /* polygonAlgos.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D5080529D6E2040034D80D /* polygonAlgos.h */; };
+		00D5082E29D6E2650034D80D /* bbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5081C29D6E2620034D80D /* bbox.c */; };
+		00D5082F29D6E2650034D80D /* coordijk.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5081D29D6E2620034D80D /* coordijk.c */; };
+		00D5083029D6E2650034D80D /* h3Assert.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5081E29D6E2630034D80D /* h3Assert.c */; };
+		00D5083129D6E2650034D80D /* iterators.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5081F29D6E2630034D80D /* iterators.c */; };
+		00D5083229D6E2650034D80D /* h3Index.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082029D6E2630034D80D /* h3Index.c */; };
+		00D5083329D6E2650034D80D /* vec2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082129D6E2630034D80D /* vec2d.c */; };
+		00D5083429D6E2650034D80D /* mathExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082229D6E2630034D80D /* mathExtensions.c */; };
+		00D5083529D6E2650034D80D /* latLng.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082329D6E2630034D80D /* latLng.c */; };
+		00D5083629D6E2650034D80D /* vertex.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082429D6E2630034D80D /* vertex.c */; };
+		00D5083729D6E2650034D80D /* polygon.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082529D6E2640034D80D /* polygon.c */; };
+		00D5083829D6E2650034D80D /* baseCells.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082629D6E2640034D80D /* baseCells.c */; };
+		00D5083929D6E2650034D80D /* algos.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082729D6E2640034D80D /* algos.c */; };
+		00D5083A29D6E2650034D80D /* faceijk.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082829D6E2640034D80D /* faceijk.c */; };
+		00D5083B29D6E2650034D80D /* localij.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082929D6E2640034D80D /* localij.c */; };
+		00D5083C29D6E2650034D80D /* vertexGraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082A29D6E2640034D80D /* vertexGraph.c */; };
+		00D5083D29D6E2650034D80D /* directedEdge.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082B29D6E2640034D80D /* directedEdge.c */; };
+		00D5083E29D6E2650034D80D /* linkedGeo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082C29D6E2650034D80D /* linkedGeo.c */; };
+		00D5083F29D6E2650034D80D /* vec3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 00D5082D29D6E2650034D80D /* vec3d.c */; };
 		6923C7F221105482008033A7 /* H3Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C7F021105482008033A7 /* H3Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6923C7FF21105498008033A7 /* Aliase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C7F621105498008033A7 /* Aliase.swift */; };
 		6923C80021105498008033A7 /* h3Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C7F721105498008033A7 /* h3Set.swift */; };
@@ -18,35 +58,14 @@
 		6923C80621105498008033A7 /* LinkedGeoPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C7FD21105498008033A7 /* LinkedGeoPolygon.swift */; };
 		6923C80721105498008033A7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C7FE21105498008033A7 /* Util.swift */; };
 		6923C80B211054CF008033A7 /* H3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6923B46721105108008033A7 /* H3.framework */; };
-		6923C90721106632008033A7 /* vec2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8F721106630008033A7 /* vec2d.h */; };
-		6923C90821106632008033A7 /* h3api.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8F821106630008033A7 /* h3api.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6923C90921106632008033A7 /* vertexGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8F921106630008033A7 /* vertexGraph.h */; };
-		6923C90A21106632008033A7 /* stackAlloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FA21106631008033A7 /* stackAlloc.h */; };
-		6923C90B21106632008033A7 /* geoCoord.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FB21106631008033A7 /* geoCoord.h */; };
 		6923C90C21106632008033A7 /* faceijk.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FC21106631008033A7 /* faceijk.h */; };
 		6923C90D21106632008033A7 /* bbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FD21106631008033A7 /* bbox.h */; };
 		6923C90E21106632008033A7 /* baseCells.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FE21106631008033A7 /* baseCells.h */; };
-		6923C90F21106632008033A7 /* h3Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C8FF21106631008033A7 /* h3Index.h */; };
-		6923C91021106632008033A7 /* vec3d.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90021106631008033A7 /* vec3d.h */; };
-		6923C91121106632008033A7 /* h3UniEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90121106631008033A7 /* h3UniEdge.h */; };
-		6923C91221106632008033A7 /* linkedGeo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90221106631008033A7 /* linkedGeo.h */; };
 		6923C91321106632008033A7 /* algos.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90321106631008033A7 /* algos.h */; };
 		6923C91421106632008033A7 /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90421106632008033A7 /* constants.h */; };
 		6923C91521106632008033A7 /* coordijk.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90521106632008033A7 /* coordijk.h */; };
-		6923C91621106632008033A7 /* mathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6923C90621106632008033A7 /* mathExtensions.h */; };
-		6923C9242110664E008033A7 /* mathExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9172110664D008033A7 /* mathExtensions.c */; };
-		6923C9252110664E008033A7 /* linkedGeo.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9182110664D008033A7 /* linkedGeo.c */; };
 		6923C9262110664E008033A7 /* faceijk.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9192110664D008033A7 /* faceijk.c */; };
-		6923C9272110664E008033A7 /* h3Index.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91A2110664D008033A7 /* h3Index.c */; };
-		6923C9282110664E008033A7 /* vec2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91B2110664D008033A7 /* vec2d.c */; };
-		6923C9292110664E008033A7 /* bbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91C2110664D008033A7 /* bbox.c */; };
-		6923C92A2110664E008033A7 /* geoCoord.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91D2110664D008033A7 /* geoCoord.c */; };
-		6923C92B2110664E008033A7 /* vertexGraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91E2110664E008033A7 /* vertexGraph.c */; };
-		6923C92C2110664E008033A7 /* vec3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C91F2110664E008033A7 /* vec3d.c */; };
 		6923C92D2110664E008033A7 /* algos.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9202110664E008033A7 /* algos.c */; };
-		6923C92E2110664E008033A7 /* coordijk.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9212110664E008033A7 /* coordijk.c */; };
-		6923C92F2110664E008033A7 /* h3UniEdge.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9222110664E008033A7 /* h3UniEdge.c */; };
-		6923C9302110664E008033A7 /* baseCells.c in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9232110664E008033A7 /* baseCells.c */; };
 		6923C93A2110670C008033A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C9392110670C008033A7 /* AppDelegate.swift */; };
 		6923C93C2110670C008033A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6923C93B2110670C008033A7 /* ViewController.swift */; };
 		6923C93F2110670C008033A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6923C93D2110670C008033A7 /* Main.storyboard */; };
@@ -101,6 +120,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00D507F029D6E2010034D80D /* vec2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec2d.h; sourceTree = "<group>"; };
+		00D507F129D6E2010034D80D /* h3api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h3api.h; sourceTree = "<group>"; };
+		00D507F229D6E2010034D80D /* iterators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterators.h; sourceTree = "<group>"; };
+		00D507F329D6E2020034D80D /* h3Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h3Index.h; sourceTree = "<group>"; };
+		00D507F429D6E2020034D80D /* algos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algos.h; sourceTree = "<group>"; };
+		00D507F529D6E2020034D80D /* linkedGeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedGeo.h; sourceTree = "<group>"; };
+		00D507F629D6E2020034D80D /* vertexGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertexGraph.h; sourceTree = "<group>"; };
+		00D507F729D6E2020034D80D /* vec3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec3d.h; sourceTree = "<group>"; };
+		00D507F829D6E2020034D80D /* coordijk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordijk.h; sourceTree = "<group>"; };
+		00D507F929D6E2020034D80D /* h3Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h3Assert.h; sourceTree = "<group>"; };
+		00D507FA29D6E2030034D80D /* directedEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directedEdge.h; sourceTree = "<group>"; };
+		00D507FB29D6E2030034D80D /* alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alloc.h; sourceTree = "<group>"; };
+		00D507FC29D6E2030034D80D /* mathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathExtensions.h; sourceTree = "<group>"; };
+		00D507FD29D6E2030034D80D /* vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex.h; sourceTree = "<group>"; };
+		00D507FE29D6E2030034D80D /* bbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbox.h; sourceTree = "<group>"; };
+		00D507FF29D6E2030034D80D /* faceijk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faceijk.h; sourceTree = "<group>"; };
+		00D5080029D6E2030034D80D /* latLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = latLng.h; sourceTree = "<group>"; };
+		00D5080129D6E2040034D80D /* baseCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseCells.h; sourceTree = "<group>"; };
+		00D5080229D6E2040034D80D /* polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polygon.h; sourceTree = "<group>"; };
+		00D5080329D6E2040034D80D /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		00D5080429D6E2040034D80D /* localij.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = localij.h; sourceTree = "<group>"; };
+		00D5080529D6E2040034D80D /* polygonAlgos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polygonAlgos.h; sourceTree = "<group>"; };
+		00D5081C29D6E2620034D80D /* bbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bbox.c; sourceTree = "<group>"; };
+		00D5081D29D6E2620034D80D /* coordijk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coordijk.c; sourceTree = "<group>"; };
+		00D5081E29D6E2630034D80D /* h3Assert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = h3Assert.c; sourceTree = "<group>"; };
+		00D5081F29D6E2630034D80D /* iterators.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterators.c; sourceTree = "<group>"; };
+		00D5082029D6E2630034D80D /* h3Index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = h3Index.c; sourceTree = "<group>"; };
+		00D5082129D6E2630034D80D /* vec2d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec2d.c; sourceTree = "<group>"; };
+		00D5082229D6E2630034D80D /* mathExtensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mathExtensions.c; sourceTree = "<group>"; };
+		00D5082329D6E2630034D80D /* latLng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = latLng.c; sourceTree = "<group>"; };
+		00D5082429D6E2630034D80D /* vertex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vertex.c; sourceTree = "<group>"; };
+		00D5082529D6E2640034D80D /* polygon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = polygon.c; sourceTree = "<group>"; };
+		00D5082629D6E2640034D80D /* baseCells.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = baseCells.c; sourceTree = "<group>"; };
+		00D5082729D6E2640034D80D /* algos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = algos.c; sourceTree = "<group>"; };
+		00D5082829D6E2640034D80D /* faceijk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = faceijk.c; sourceTree = "<group>"; };
+		00D5082929D6E2640034D80D /* localij.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localij.c; sourceTree = "<group>"; };
+		00D5082A29D6E2640034D80D /* vertexGraph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vertexGraph.c; sourceTree = "<group>"; };
+		00D5082B29D6E2640034D80D /* directedEdge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = directedEdge.c; sourceTree = "<group>"; };
+		00D5082C29D6E2650034D80D /* linkedGeo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedGeo.c; sourceTree = "<group>"; };
+		00D5082D29D6E2650034D80D /* vec3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vec3d.c; sourceTree = "<group>"; };
 		6923B46721105108008033A7 /* H3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = H3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6923B46B21105108008033A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6923C7AE211051BD008033A7 /* h3.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = h3.modulemap; sourceTree = "<group>"; };
@@ -116,35 +175,14 @@
 		6923C7FC21105498008033A7 /* GeoPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPolygon.swift; sourceTree = "<group>"; };
 		6923C7FD21105498008033A7 /* LinkedGeoPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedGeoPolygon.swift; sourceTree = "<group>"; };
 		6923C7FE21105498008033A7 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		6923C8F721106630008033A7 /* vec2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec2d.h; path = "uber-h3/src/h3lib/include/vec2d.h"; sourceTree = SOURCE_ROOT; };
-		6923C8F821106630008033A7 /* h3api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h3api.h; path = "uber-h3/src/h3lib/include/h3api.h"; sourceTree = SOURCE_ROOT; };
-		6923C8F921106630008033A7 /* vertexGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vertexGraph.h; path = "uber-h3/src/h3lib/include/vertexGraph.h"; sourceTree = SOURCE_ROOT; };
-		6923C8FA21106631008033A7 /* stackAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stackAlloc.h; path = "uber-h3/src/h3lib/include/stackAlloc.h"; sourceTree = SOURCE_ROOT; };
-		6923C8FB21106631008033A7 /* geoCoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geoCoord.h; path = "uber-h3/src/h3lib/include/geoCoord.h"; sourceTree = SOURCE_ROOT; };
 		6923C8FC21106631008033A7 /* faceijk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faceijk.h; path = "uber-h3/src/h3lib/include/faceijk.h"; sourceTree = SOURCE_ROOT; };
 		6923C8FD21106631008033A7 /* bbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bbox.h; path = "uber-h3/src/h3lib/include/bbox.h"; sourceTree = SOURCE_ROOT; };
 		6923C8FE21106631008033A7 /* baseCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baseCells.h; path = "uber-h3/src/h3lib/include/baseCells.h"; sourceTree = SOURCE_ROOT; };
-		6923C8FF21106631008033A7 /* h3Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h3Index.h; path = "uber-h3/src/h3lib/include/h3Index.h"; sourceTree = SOURCE_ROOT; };
-		6923C90021106631008033A7 /* vec3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec3d.h; path = "uber-h3/src/h3lib/include/vec3d.h"; sourceTree = SOURCE_ROOT; };
-		6923C90121106631008033A7 /* h3UniEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = h3UniEdge.h; path = "uber-h3/src/h3lib/include/h3UniEdge.h"; sourceTree = SOURCE_ROOT; };
-		6923C90221106631008033A7 /* linkedGeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linkedGeo.h; path = "uber-h3/src/h3lib/include/linkedGeo.h"; sourceTree = SOURCE_ROOT; };
 		6923C90321106631008033A7 /* algos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = algos.h; path = "uber-h3/src/h3lib/include/algos.h"; sourceTree = SOURCE_ROOT; };
 		6923C90421106632008033A7 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constants.h; path = "uber-h3/src/h3lib/include/constants.h"; sourceTree = SOURCE_ROOT; };
 		6923C90521106632008033A7 /* coordijk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coordijk.h; path = "uber-h3/src/h3lib/include/coordijk.h"; sourceTree = SOURCE_ROOT; };
-		6923C90621106632008033A7 /* mathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathExtensions.h; path = "uber-h3/src/h3lib/include/mathExtensions.h"; sourceTree = SOURCE_ROOT; };
-		6923C9172110664D008033A7 /* mathExtensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mathExtensions.c; path = "uber-h3/src/h3lib/lib/mathExtensions.c"; sourceTree = SOURCE_ROOT; };
-		6923C9182110664D008033A7 /* linkedGeo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = linkedGeo.c; path = "uber-h3/src/h3lib/lib/linkedGeo.c"; sourceTree = SOURCE_ROOT; };
 		6923C9192110664D008033A7 /* faceijk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = faceijk.c; path = "uber-h3/src/h3lib/lib/faceijk.c"; sourceTree = SOURCE_ROOT; };
-		6923C91A2110664D008033A7 /* h3Index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = h3Index.c; path = "uber-h3/src/h3lib/lib/h3Index.c"; sourceTree = SOURCE_ROOT; };
-		6923C91B2110664D008033A7 /* vec2d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vec2d.c; path = "uber-h3/src/h3lib/lib/vec2d.c"; sourceTree = SOURCE_ROOT; };
-		6923C91C2110664D008033A7 /* bbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bbox.c; path = "uber-h3/src/h3lib/lib/bbox.c"; sourceTree = SOURCE_ROOT; };
-		6923C91D2110664D008033A7 /* geoCoord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = geoCoord.c; path = "uber-h3/src/h3lib/lib/geoCoord.c"; sourceTree = SOURCE_ROOT; };
-		6923C91E2110664E008033A7 /* vertexGraph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vertexGraph.c; path = "uber-h3/src/h3lib/lib/vertexGraph.c"; sourceTree = SOURCE_ROOT; };
-		6923C91F2110664E008033A7 /* vec3d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vec3d.c; path = "uber-h3/src/h3lib/lib/vec3d.c"; sourceTree = SOURCE_ROOT; };
 		6923C9202110664E008033A7 /* algos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = algos.c; path = "uber-h3/src/h3lib/lib/algos.c"; sourceTree = SOURCE_ROOT; };
-		6923C9212110664E008033A7 /* coordijk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = coordijk.c; path = "uber-h3/src/h3lib/lib/coordijk.c"; sourceTree = SOURCE_ROOT; };
-		6923C9222110664E008033A7 /* h3UniEdge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = h3UniEdge.c; path = "uber-h3/src/h3lib/lib/h3UniEdge.c"; sourceTree = SOURCE_ROOT; };
-		6923C9232110664E008033A7 /* baseCells.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = baseCells.c; path = "uber-h3/src/h3lib/lib/baseCells.c"; sourceTree = SOURCE_ROOT; };
 		6923C9372110670C008033A7 /* H3SwiftTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H3SwiftTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6923C9392110670C008033A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6923C93B2110670C008033A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -247,20 +285,32 @@
 			children = (
 				6923C90321106631008033A7 /* algos.h */,
 				6923C8FE21106631008033A7 /* baseCells.h */,
+				00D5080129D6E2040034D80D /* baseCells.h */,
 				6923C8FD21106631008033A7 /* bbox.h */,
 				6923C90421106632008033A7 /* constants.h */,
+				00D507FB29D6E2030034D80D /* alloc.h */,
+				00D507FE29D6E2030034D80D /* bbox.h */,
+				00D5080329D6E2040034D80D /* constants.h */,
 				6923C90521106632008033A7 /* coordijk.h */,
 				6923C8FC21106631008033A7 /* faceijk.h */,
-				6923C8FB21106631008033A7 /* geoCoord.h */,
-				6923C8F821106630008033A7 /* h3api.h */,
-				6923C8FF21106631008033A7 /* h3Index.h */,
-				6923C90121106631008033A7 /* h3UniEdge.h */,
-				6923C90221106631008033A7 /* linkedGeo.h */,
-				6923C90621106632008033A7 /* mathExtensions.h */,
-				6923C8FA21106631008033A7 /* stackAlloc.h */,
-				6923C8F721106630008033A7 /* vec2d.h */,
-				6923C90021106631008033A7 /* vec3d.h */,
-				6923C8F921106630008033A7 /* vertexGraph.h */,
+				00D507F429D6E2020034D80D /* algos.h */,
+				00D507F829D6E2020034D80D /* coordijk.h */,
+				00D507FA29D6E2030034D80D /* directedEdge.h */,
+				00D507FF29D6E2030034D80D /* faceijk.h */,
+				00D507F129D6E2010034D80D /* h3api.h */,
+				00D507F929D6E2020034D80D /* h3Assert.h */,
+				00D507F329D6E2020034D80D /* h3Index.h */,
+				00D507F229D6E2010034D80D /* iterators.h */,
+				00D5080029D6E2030034D80D /* latLng.h */,
+				00D507F529D6E2020034D80D /* linkedGeo.h */,
+				00D5080429D6E2040034D80D /* localij.h */,
+				00D507FC29D6E2030034D80D /* mathExtensions.h */,
+				00D5080229D6E2040034D80D /* polygon.h */,
+				00D5080529D6E2040034D80D /* polygonAlgos.h */,
+				00D507F029D6E2010034D80D /* vec2d.h */,
+				00D507F729D6E2020034D80D /* vec3d.h */,
+				00D507FD29D6E2030034D80D /* vertex.h */,
+				00D507F629D6E2020034D80D /* vertexGraph.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -269,18 +319,25 @@
 			isa = PBXGroup;
 			children = (
 				6923C9202110664E008033A7 /* algos.c */,
-				6923C9232110664E008033A7 /* baseCells.c */,
-				6923C91C2110664D008033A7 /* bbox.c */,
-				6923C9212110664E008033A7 /* coordijk.c */,
+				00D5082729D6E2640034D80D /* algos.c */,
+				00D5082629D6E2640034D80D /* baseCells.c */,
+				00D5082B29D6E2640034D80D /* directedEdge.c */,
 				6923C9192110664D008033A7 /* faceijk.c */,
-				6923C91D2110664D008033A7 /* geoCoord.c */,
-				6923C91A2110664D008033A7 /* h3Index.c */,
-				6923C9222110664E008033A7 /* h3UniEdge.c */,
-				6923C9182110664D008033A7 /* linkedGeo.c */,
-				6923C9172110664D008033A7 /* mathExtensions.c */,
-				6923C91B2110664D008033A7 /* vec2d.c */,
-				6923C91F2110664E008033A7 /* vec3d.c */,
-				6923C91E2110664E008033A7 /* vertexGraph.c */,
+				00D5081C29D6E2620034D80D /* bbox.c */,
+				00D5081D29D6E2620034D80D /* coordijk.c */,
+				00D5082829D6E2640034D80D /* faceijk.c */,
+				00D5081E29D6E2630034D80D /* h3Assert.c */,
+				00D5082029D6E2630034D80D /* h3Index.c */,
+				00D5081F29D6E2630034D80D /* iterators.c */,
+				00D5082329D6E2630034D80D /* latLng.c */,
+				00D5082C29D6E2650034D80D /* linkedGeo.c */,
+				00D5082929D6E2640034D80D /* localij.c */,
+				00D5082229D6E2630034D80D /* mathExtensions.c */,
+				00D5082529D6E2640034D80D /* polygon.c */,
+				00D5082129D6E2630034D80D /* vec2d.c */,
+				00D5082D29D6E2650034D80D /* vec3d.c */,
+				00D5082429D6E2630034D80D /* vertex.c */,
+				00D5082A29D6E2640034D80D /* vertexGraph.c */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -308,22 +365,33 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6923C90821106632008033A7 /* h3api.h in Headers */,
-				6923C91621106632008033A7 /* mathExtensions.h in Headers */,
-				6923C91121106632008033A7 /* h3UniEdge.h in Headers */,
+				00D5081629D6E2040034D80D /* latLng.h in Headers */,
+				00D5080C29D6E2040034D80D /* vertexGraph.h in Headers */,
+				00D5080F29D6E2040034D80D /* h3Assert.h in Headers */,
+				00D5081529D6E2040034D80D /* faceijk.h in Headers */,
+				00D5080829D6E2040034D80D /* iterators.h in Headers */,
+				00D5081429D6E2040034D80D /* bbox.h in Headers */,
 				6923C90C21106632008033A7 /* faceijk.h in Headers */,
 				6923C90D21106632008033A7 /* bbox.h in Headers */,
+				00D5080629D6E2040034D80D /* vec2d.h in Headers */,
 				6923C91521106632008033A7 /* coordijk.h in Headers */,
-				6923C90921106632008033A7 /* vertexGraph.h in Headers */,
-				6923C90B21106632008033A7 /* geoCoord.h in Headers */,
+				00D5081B29D6E2040034D80D /* polygonAlgos.h in Headers */,
+				00D5081A29D6E2040034D80D /* localij.h in Headers */,
 				6923C91421106632008033A7 /* constants.h in Headers */,
-				6923C90721106632008033A7 /* vec2d.h in Headers */,
-				6923C90F21106632008033A7 /* h3Index.h in Headers */,
-				6923C90A21106632008033A7 /* stackAlloc.h in Headers */,
-				6923C91021106632008033A7 /* vec3d.h in Headers */,
+				00D5080B29D6E2040034D80D /* linkedGeo.h in Headers */,
+				00D5080E29D6E2040034D80D /* coordijk.h in Headers */,
+				00D5080929D6E2040034D80D /* h3Index.h in Headers */,
+				00D5081929D6E2040034D80D /* constants.h in Headers */,
+				00D5081729D6E2040034D80D /* baseCells.h in Headers */,
+				00D5081829D6E2040034D80D /* polygon.h in Headers */,
+				00D5081029D6E2040034D80D /* directedEdge.h in Headers */,
 				6923C90E21106632008033A7 /* baseCells.h in Headers */,
+				00D5081329D6E2040034D80D /* vertex.h in Headers */,
 				6923C91321106632008033A7 /* algos.h in Headers */,
-				6923C91221106632008033A7 /* linkedGeo.h in Headers */,
+				00D5081229D6E2040034D80D /* mathExtensions.h in Headers */,
+				00D5081129D6E2040034D80D /* alloc.h in Headers */,
+				00D5080D29D6E2040034D80D /* vec3d.h in Headers */,
+				00D5080A29D6E2040034D80D /* algos.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +510,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D5080729D6E2040034D80D /* h3api.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,19 +538,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6923C92A2110664E008033A7 /* geoCoord.c in Sources */,
+				00D5083D29D6E2650034D80D /* directedEdge.c in Sources */,
 				6923C9262110664E008033A7 /* faceijk.c in Sources */,
-				6923C9282110664E008033A7 /* vec2d.c in Sources */,
-				6923C9272110664E008033A7 /* h3Index.c in Sources */,
-				6923C92F2110664E008033A7 /* h3UniEdge.c in Sources */,
+				00D5083A29D6E2650034D80D /* faceijk.c in Sources */,
 				6923C92D2110664E008033A7 /* algos.c in Sources */,
-				6923C9252110664E008033A7 /* linkedGeo.c in Sources */,
-				6923C9292110664E008033A7 /* bbox.c in Sources */,
-				6923C92C2110664E008033A7 /* vec3d.c in Sources */,
-				6923C92B2110664E008033A7 /* vertexGraph.c in Sources */,
-				6923C9242110664E008033A7 /* mathExtensions.c in Sources */,
-				6923C92E2110664E008033A7 /* coordijk.c in Sources */,
-				6923C9302110664E008033A7 /* baseCells.c in Sources */,
+				00D5083529D6E2650034D80D /* latLng.c in Sources */,
+				00D5083929D6E2650034D80D /* algos.c in Sources */,
+				00D5083629D6E2650034D80D /* vertex.c in Sources */,
+				00D5083829D6E2650034D80D /* baseCells.c in Sources */,
+				00D5083B29D6E2650034D80D /* localij.c in Sources */,
+				00D5083029D6E2650034D80D /* h3Assert.c in Sources */,
+				00D5082F29D6E2650034D80D /* coordijk.c in Sources */,
+				00D5083329D6E2650034D80D /* vec2d.c in Sources */,
+				00D5083F29D6E2650034D80D /* vec3d.c in Sources */,
+				00D5082E29D6E2650034D80D /* bbox.c in Sources */,
+				00D5083C29D6E2650034D80D /* vertexGraph.c in Sources */,
+				00D5083229D6E2650034D80D /* h3Index.c in Sources */,
+				00D5083129D6E2650034D80D /* iterators.c in Sources */,
+				00D5083E29D6E2650034D80D /* linkedGeo.c in Sources */,
+				00D5083729D6E2650034D80D /* polygon.c in Sources */,
+				00D5083429D6E2650034D80D /* mathExtensions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
