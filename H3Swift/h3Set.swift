@@ -14,9 +14,10 @@ public extension Array where Element == H3Index {
         let sz: Int = self.count
         var out: Array<H3.H3Index> = Array<H3.H3Index>(repeating: 0, count: sz)
         var arr: Array<H3.H3Index> = self.map({ $0.index })
-        let res = arr.withUnsafeMutableBufferPointer { (inputPtr) -> Int32 in
-            return out.withUnsafeMutableBufferPointer({ (outPtr) -> Int32 in
-                return H3.compact(inputPtr.baseAddress, outPtr.baseAddress, Int32(sz))
+        let res = arr.withUnsafeMutableBufferPointer { (inputPtr) -> H3Error in
+            return out.withUnsafeMutableBufferPointer({ (outPtr) -> H3Error in
+                return H3.compactCells(inputPtr.baseAddress, outPtr.baseAddress, Int64(sz))
+//                return H3.compact(inputPtr.baseAddress, outPtr.baseAddress, Int32(sz))
             })
         }
         guard res == 0 else {
@@ -29,9 +30,10 @@ public extension Array where Element == H3Index {
         let sz = maxUncompactSize(res: res)
         var out: Array<H3.H3Index> = Array<H3.H3Index>(repeating: 0, count: Int(sz))
         var arr: Array<H3.H3Index> = self.map({ $0.index })
-        let res = arr.withUnsafeMutableBufferPointer { (inputPtr) -> Int32 in
-            return out.withUnsafeMutableBufferPointer({ (outPtr) -> Int32 in
-                return H3.uncompact(inputPtr.baseAddress, Int32(self.count), outPtr.baseAddress, sz, res)
+        let res = arr.withUnsafeMutableBufferPointer { (inputPtr) -> H3Error in
+            return out.withUnsafeMutableBufferPointer({ (outPtr) -> H3Error in
+//                return H3.uncompact(inputPtr.baseAddress, Int32(self.count), outPtr.baseAddress, sz, res)
+                return H3.uncompactCells(inputPtr.baseAddress, Int64(self.count), outPtr.baseAddress, Int64(sz), res)
             })
         }
         guard res == 0 else {
@@ -40,18 +42,21 @@ public extension Array where Element == H3Index {
         return out.filter({$0 != 0}).map({H3Index($0)})
     }
     
-    public func maxUncompactSize(res: Int32) -> Int32 {
-        var arr: Array<H3.H3Index> = self.map({ $0.index })
-        return arr.withUnsafeBufferPointer { (inPtr) -> Int32 in
-            return H3.maxUncompactSize(inPtr.baseAddress, Int32(self.count), res)
+    func maxUncompactSize(res: Int32) -> Int32 {
+        var arr : Array<H3.H3Index> = self.map({ $0.index })
+        var ret : Int64 = 0
+        arr.withUnsafeBufferPointer { (inPtr) -> Void in
+            H3.uncompactCellsSize(inPtr.baseAddress, Int64(self.count), res, &ret)
+//            return H3.maxUncompactSize(inPtr.baseAddress, Int32(self.count), res)
         }
+        return Int32(ret)
     }
     
-    public mutating func toMultiplePolygon() -> Array<Array<Array<GeoCoord>>> {
+    mutating func toMultiplePolygon() -> Array<Array<Array<GeoCoord>>> {
         let out: UnsafeMutablePointer<LinkedGeoPolygon> = UnsafeMutablePointer.allocate(capacity: 1)
         let arr: Array<H3.H3Index> = self.map({ $0.index })
         arr.withUnsafeBufferPointer { (inPtr) -> Void in
-            h3SetToLinkedGeo(inPtr.baseAddress, Int32(self.count), out)
+            H3.cellsToLinkedMultiPolygon(inPtr.baseAddress, Int32(self.count), out)
         }
         var result: Array<Array<Array<GeoCoord>>> = Array<Array<Array<GeoCoord>>>()
         var currentPoly: LinkedGeoPolygon? = out.pointee
@@ -65,7 +70,7 @@ public extension Array where Element == H3Index {
                 var resultLoop: Array<GeoCoord> = Array<GeoCoord>()
                 var coord: LinkedGeoCoord? = currLoop.first?.pointee
                 while coord != nil {
-                    let geoCoord = GeoCoord(lat: coord!.vertex.lat, lon: coord!.vertex.lon)
+                    let geoCoord = GeoCoord(lat: coord!.vertex.lat, lng: coord!.vertex.lng)
                     resultLoop.append(geoCoord)
                     coord = coord?.next?.pointee
                 }
@@ -75,7 +80,8 @@ public extension Array where Element == H3Index {
             result.append(resultLoops)
             currentPoly = currentPoly?.next?.pointee
         }
-        H3.destroyLinkedPolygon(out)
+//        H3.destroyLinkedPolygon(out)
+        H3.destroyLinkedMultiPolygon(out)
         return result
     }
 }

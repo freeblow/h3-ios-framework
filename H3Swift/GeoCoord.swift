@@ -10,7 +10,7 @@ import Foundation
 import H3
 
 public extension GeoCoord {
-    public static func from(_ h3Index: H3Index) -> GeoCoord {
+    static func from(_ h3Index: H3Index) -> GeoCoord {
         var coord: GeoCoord = GeoCoord(lat: 0.0, lng: 0.0)
         withUnsafeMutablePointer(to: &coord) { (ptr) -> Void in
             cellToLatLng(h3Index.index, ptr)
@@ -18,10 +18,11 @@ public extension GeoCoord {
         return coord
     }
     
-    public mutating func toH3(res: Int32) -> H3Index {
-        return withUnsafePointer(to: &self) { (ptr) -> H3Index in
-            H3.latLngToCell(<#T##g: UnsafePointer<LatLng>!##UnsafePointer<LatLng>!#>, <#T##res: Int32##Int32#>, <#T##out: UnsafeMutablePointer<H3Index>!##UnsafeMutablePointer<H3Index>!#>)
-            return H3Index(H3.geoToH3(ptr, res))
+    mutating func toH3(res: Int32) -> H3Index {
+        var ret : H3.H3Index = 0
+        withUnsafeMutablePointer(to: &ret) { (ptr) -> Void in
+            H3.latLngToCell(&self, res, ptr)
         }
+        return H3Index(ret)
     }
 }

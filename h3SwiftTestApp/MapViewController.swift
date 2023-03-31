@@ -106,7 +106,7 @@ extension MapViewController: UITableViewDataSource {
             }
         case 1:
             cell.textLabel?.text = "Res: \(indexPath.row)"
-            var coord = GeoCoord(lat: degsToRads(loc.latitude), lon: degsToRads(loc.longitude))
+            var coord = GeoCoord(lat: degsToRads(loc.latitude), lng: degsToRads(loc.longitude))
             cell.detailTextLabel?.text = "\(coord.toH3(res: Int32(indexPath.row)).toString())"
         default:
             break
@@ -129,7 +129,7 @@ extension MapViewController: UITableViewDelegate {
             return
         }
         let res = indexPath.row
-        var coord = GeoCoord(lat: degsToRads(loc.latitude), lon: degsToRads(loc.longitude))
+        var coord = GeoCoord(lat: degsToRads(loc.latitude), lng: degsToRads(loc.longitude))
         let h3Index = coord.toH3(res: Int32(res)).toString()
         DispatchQueue.global(qos: .background).async {
             UIPasteboard.general.string = h3Index

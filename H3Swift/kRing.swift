@@ -9,6 +9,6 @@
 import Foundation
 import H3
 
-public func maxKringSize(k: Int32) -> Int32 {
-    return H3.maxKringSize(k)
-}
+//public func maxKringSize(k: Int32) -> Int32 {
+//    return H3.maxKringSize(k)
+//}

@@ -73,7 +73,7 @@ extension DecodeViewController: UITableViewDataSource {
                 cell.detailTextLabel?.text = "\(radsToDegs(coord.lat))"
             } else {
                 cell.textLabel?.text = "Longitude"
-                cell.detailTextLabel?.text = "\(radsToDegs(coord.lon))"
+                cell.detailTextLabel?.text = "\(radsToDegs(coord.lng))"
             }
         case 1:
             let buf = idx.geoBoundary()
@@ -86,6 +86,6 @@ extension DecodeViewController: UITableViewDataSource {
     }
     
     fileprivate func geoCoordToString(_ coord: GeoCoord) -> String {
-        return "\(radsToDegs(coord.lat)),\(radsToDegs(coord.lon))"
+        return "\(radsToDegs(coord.lat)),\(radsToDegs(coord.lng))"
     }
 }

@@ -11,6 +11,6 @@ import H3
 
 public func destroyLinkedGeoPolygon(polygon: inout LinkedGeoPolygon) {
     withUnsafeMutablePointer(to: &polygon) { (ptr) -> Void in
-        H3.destroyLinkedPolygon(ptr)
+        H3.destroyLinkedMultiPolygon(ptr)
     }
 }

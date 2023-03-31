@@ -39,7 +39,7 @@ class DrawHexagonViewController: UIViewController {
     
     //MARK: Utils
     private func geoCoordToCLLoc(_ c: GeoCoord) -> CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: radsToDegs(c.lat), longitude: radsToDegs(c.lon))
+        return CLLocationCoordinate2D(latitude: radsToDegs(c.lat), longitude: radsToDegs(c.lng))
     }
 }
 
