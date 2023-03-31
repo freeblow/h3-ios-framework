@@ -10,17 +10,17 @@ import Foundation
 import H3
 
 public let MAX_CELL_BNDRY_VERTS = 10
-public typealias GeoCoord = H3.GeoCoord
-public typealias GeoBoundary = H3.GeoBoundary
-public typealias Geofence = H3.Geofence
+public typealias GeoCoord = H3.LatLng
+public typealias GeoBoundary = H3.CellBoundary
+public typealias Geofence = H3.GeoLoop
 public typealias GeoPolygon = H3.GeoPolygon
 public typealias GeoMultiPolygon = H3.GeoMultiPolygon
-public typealias LinkedGeoCoord = H3.LinkedGeoCoord
+public typealias LinkedGeoCoord = H3.LinkedLatLng
 public typealias LinkedGeoPolygon = H3.LinkedGeoPolygon
 
 public extension GeoCoord {
-    public static var zero: GeoCoord {
-        return GeoCoord(lat: 0, lon: 0)
+    static var zero: GeoCoord {
+        return GeoCoord(lat: 0, lng: 0)
     }
 }
 
@@ -51,11 +51,11 @@ public extension GeoPolygon {
     init(coords: inout [GeoCoord]) {
         let fence = Geofence(coords: &coords)
         var emptyArray: [Geofence] = []
-        self.init(geofence: fence, numHoles: 0, holes: &emptyArray)
+        self.init(geoloop: fence, numHoles: 0, holes: &emptyArray)
     }
     
     init(coords: inout [GeoCoord], holes: inout [Geofence]) {
         let edge = Geofence(coords: &coords)
-        self.init(geofence: edge, numHoles: Int32(holes.count), holes: &holes)
+        self.init(geoloop: edge, numHoles: Int32(holes.count), holes: &holes)
     }
 }
